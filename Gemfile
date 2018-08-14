@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '5.1.4'
+gem 'bootstrap-sass'
 gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
@@ -30,7 +31,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '0.21.0'
+  gem 'pg'
 end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
