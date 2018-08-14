@@ -14,7 +14,7 @@ RSpec.describe StaticPagesController, type: :controller do
       expect(response).to have_http_status(:success)                  #リクエストに対するレスポンスはSuccessになる
     end
     it "has correct title" do
-      expect(response.body).to have_title "Home | #{base_title}"     #titleがHome | Ruby on Rails Tutorial Sample Appとなっている
+      expect(response.body).to have_title "#{base_title}"     #titleがHome | Ruby on Rails Tutorial Sample Appとなっている
     end
   end
 
