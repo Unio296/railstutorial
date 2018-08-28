@@ -16,6 +16,7 @@ module Railstutorial
     # -- all .rb files in that directory are automatically loaded.
 
     #Rspecの'rails g ~'コマンド時の自動生成ファイル設定
+    #自動生成したいspecのみtrueに
     config.generators do |g|
       g.test_framework :rspec,
                        fixtures: true,

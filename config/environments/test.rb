@@ -39,4 +39,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  #Bcryptのコストファクターをテスト環境向けに再定義する
+  ActiveModel::SecurePassword.min_cost = true
 end
